@@ -1,0 +1,152 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_childBridgeA",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_childBridgeB",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "TokensTransferredToChild",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "childBridgeA",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "childBridgeB",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transferToChildA",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transferToChildB",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"transferToChildA(uint256)": {
+					"details": "1-CBC_B_Commitからトークンを受け取り、2-CBC_A_Commitに送信",
+					"params": {
+						"amount": "トークンの量"
+					}
+				},
+				"transferToChildB(uint256)": {
+					"details": "2-CBC_A_Commitからトークンを受け取り、1-CBC_B_Commitに送信",
+					"params": {
+						"amount": "トークンの量"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Existing/3-PBC_verify.sol": "ParentBridge"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Existing/3-PBC_verify.sol": {
+			"keccak256": "0x99e449aa4c020a888c76c20869e3bf21a37f719fa9c05a85fb31ff818b76652e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://417c41073bd776fd388d6bf42130ff02e05d801ed60bb78fd2d86f776526a430",
+				"dweb:/ipfs/QmRBuFRu8SexBiBwmg7qxAeEbT29FLuKwj2BcBYTLtjHDJ"
+			]
+		}
+	},
+	"version": 1
+}

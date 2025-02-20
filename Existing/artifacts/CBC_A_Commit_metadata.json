@@ -1,0 +1,109 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_parentBridge",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "TokensSentToParent",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "parentBridge",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "sendToParent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"sendToParent(uint256)": {
+					"details": "ParentBridgeにトークンを送信する関数",
+					"params": {
+						"amount": "送信するトークンの量"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Existing/2-CBC_A_Commit.sol": "CBC_A_Commit"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Existing/2-CBC_A_Commit.sol": {
+			"keccak256": "0xcdfd2b38df26cdcdbc48b6eb9faff8febbdff0a1bce26e7fbb6d0ac557019eb7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0f4c58274565cc2b9aa2fc24d4d14aeec06535c826d50fe053662d416c2397ed",
+				"dweb:/ipfs/QmZdWhnqfq1x8Rq2CwQTs2pycDgJYY4gda6gkzYysCmWbZ"
+			]
+		}
+	},
+	"version": 1
+}
